@@ -8,7 +8,8 @@ function Auth0Client(domain, clientId) {
   this.ResourceOwnerEndpoint  = "https://{domain}/oauth/ro";
   this.DelegationEndpoint     = "https://{domain}/delegation";
   this.UserInfoEndpoint       = "https://{domain}/userinfo?access_token=";
-  this.DefaultCallback        = "https://{domain}/mobile";
+  // this.DefaultCallback        = "https://{domain}/mobile";
+  this.DefaultCallback        = "https://digitalfactory-os-dev.randstadservices.com/Auth0Mobile/callback";
 
   this.domain = domain;
   this.clientId = clientId;
